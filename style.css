@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('Images/crackers.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Ensures proper spacing between the boxes */
+  gap: 20px; /* Adds space between the boxes */
+  width: 80%;
+  max-width: 1200px;
+}
+.box {
+  width: 48%;
+  background: linear-gradient(to bottom, #32340c1a, #20495c); /* White with 70% opacity */
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: #333;
+}
+
+
+/* Section Box Styles */
+
+
+
+/* Countdown Section */
+.countdown-section {
+  text-align: center;
+  background: linear-gradient(to bottom, #32340c1a, #20495c);;
+}
+/* Countdown Timer */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #32340c1a, #20495c);;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.time-box span {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* Scrolling Animation */
+.scrolling {
+  animation: scrollNumber 0.3s ease-out;
+}
+
+@keyframes scrollNumber {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+h2 {
+  margin: 10px 0;
+  color: #bc9bb4;
+}
+
+.preview-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 126, 95, 0.5);
+}
+
+.preview-button:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+}
+
+/* Add a style for the creative-space */
+.creative-space {
+  margin-top: 10px;
+  border: 1px dashed #333;
+  padding: 10px;
+  font-size: 0.1rem;
+  color: #151623;
+  background: linear-gradient(to bottom, #32340c1a, #20495c);;/* Light transparent white background */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.creative-space img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* Bio Section */
+.bio-section {
+  text-align: center;
+  background: linear-gradient(to bottom, #32340c1a, #20495c);
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container p {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.bio {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bio h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.bio p {
+  margin: 5px 0;
+  color: white;
+}
